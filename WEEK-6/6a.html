@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-commerce Store</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+/* Header */
+.header{
+    background-color:#3498db;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:24px;
+}
+
+/* Layout */
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:200px;
+    background:#f2f2f2;
+    padding:10px;
+}
+
+.sidebar a{
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    color:black;
+}
+
+.sidebar a:hover{
+    background:#6da7ea;
+}
+
+/* Content */
+.content{
+    flex:1;
+    padding:10px;
+}
+
+iframe{
+    width:100%;
+    height:500px;
+    border:1px solid #ccc;
+}
+
+/* Footer */
+.footer{
+    text-align:center;
+    padding:10px;
+    background:#eee;
+    font-size:12px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">E-Commerce Store</div>
+
+<div class="container">
+
+<div class="sidebar">
+<a href="Q6aElectronics.html" target="frame">Electronics</a>
+<a href="Q6aClothing.html" target="frame">Clothing</a>
+<a href="Q6aHome.html" target="frame">Home Appliances</a>
+<a href="Q6aBooks.html" target="frame">Books</a>
+</div>
+
+<div class="content">
+<iframe name="frame" src="Q6aElectronics.html"></iframe>
+</div>
+
+</div>
+
+<div class="footer">23CSE25022 E-Commerce Store</div>
+
+</body>
+</html>

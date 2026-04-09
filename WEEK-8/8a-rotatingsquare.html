@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rotating Square</title>
+<style>
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+.box{
+    width:120px;
+    height:120px;
+    text-align: center;
+    background:red;
+    animation:rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    from{transform:rotate(0deg);}
+    to{transform:rotate(360deg);}
+}
+</style>
+</head>
+
+<body>
+<div class="box">
+    <p>rotating square</p>
+</div>
+</body>
+</html>
