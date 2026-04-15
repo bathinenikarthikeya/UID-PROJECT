@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Number Programs</title>
+
+<style>
+body{
+    font-family:Verdana;
+    background-color:darkslategray;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
+
+.container{
+    background-color:slateblue;
+    padding:25px;
+    width:320px;
+    border-radius:12px;
+    text-align:center;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+input{
+    padding:10px;
+    width:80%;
+    margin-bottom:15px;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    margin:5px;
+    padding:8px 12px;
+    border:none;
+    border-radius:8px;
+    background-color:teal;
+    color:white;
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:darkgreen;
+}
+
+#output{
+    margin-top:15px;
+    font-weight:bold;
+}
+</style>
+
+<script>
+function evenOdd(){
+    let n=document.getElementById("num").value;
+
+    if(n%2==0)
+        document.getElementById("output").innerHTML="Even Number";
+    else
+        document.getElementById("output").innerHTML="Odd Number";
+}
+
+function prime(){
+    let n=document.getElementById("num").value;
+    let flag=1;
+
+    if(n<=1) flag=0;
+
+    for(let i=2;i<n;i++){
+        if(n%i==0){
+            flag=0;
+            break;
+        }
+    }
+
+    if(flag==1)
+        document.getElementById("output").innerHTML="Prime Number";
+    else
+        document.getElementById("output").innerHTML="Not a Prime Number";
+}
+
+function factorial(){
+    let n=document.getElementById("num").value;
+    let fact=1;
+
+    for(let i=1;i<=n;i++){
+        fact=fact*i;
+    }
+
+    document.getElementById("output").innerHTML="Factorial = "+fact;
+}
+
+function armstrong(){
+    let n=document.getElementById("num").value;
+    let sum=0;
+    let temp=n;
+
+    while(temp>0){
+        let r=temp%10;
+        sum=sum+(r*r*r);
+        temp=parseInt(temp/10);
+    }
+
+    if(sum==n)
+        document.getElementById("output").innerHTML="Armstrong Number";
+    else
+        document.getElementById("output").innerHTML="Not Armstrong";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Number Programs</h2>
+
+<input type="number" id="num" placeholder="Enter a number">
+
+<br>
+
+<button onclick="evenOdd()">Even / Odd</button>
+<button onclick="prime()">Prime</button>
+<button onclick="factorial()">Factorial</button>
+<button onclick="armstrong()">Armstrong</button>
+
+<div id="output"></div>
+
+</div>
+
+</body>
+</html>
