@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>MovieHub</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+</header>
+
+<div class="booking-container">
+
+    <h1>Book Your Ticket</h1>
+
+    <div class="booking-card">
+
+        <h2 id="movieName">Movie Name</h2>
+
+        <label>Select Show Time</label>
+
+        <select id="showTime">
+            <option>10:00 AM</option>
+            <option>1:00 PM</option>
+            <option>4:00 PM</option>
+            <option>7:00 PM</option>
+            <option>10:00 PM</option>
+        </select>
+
+        <h3>Select Seat</h3>
+
+        <div class="seats">
+
+            <button class="seat">A1</button>
+            <button class="seat">A2</button>
+            <button class="seat">A3</button>
+            <button class="seat">A4</button>
+
+            <button class="seat">B1</button>
+            <button class="seat">B2</button>
+            <button class="seat">B3</button>
+            <button class="seat">B4</button>
+
+            <button class="seat">C1</button>
+            <button class="seat">C2</button>
+            <button class="seat">C3</button>
+            <button class="seat">C4</button>
+
+        </div>
+
+        <p>
+            Selected Seat:
+            <strong id="seatNumber">None</strong>
+        </p>
+
+        <button class="confirm-btn"
+        onclick="confirmBooking()">
+            Confirm Booking
+        </button>
+
+    </div>
+
+</div>
+
+<footer>
+    <h3>MovieHub</h3>
+    <p>B. KARTHIKEYA | CSE25016</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
