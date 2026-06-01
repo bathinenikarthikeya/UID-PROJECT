@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Movies</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>MovieHub</h2>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="movies.html">Movies</a>
+        <a href="booking.html">Booking</a>
+    </nav>
+</header>
+
+<h1 class="page-title">Now Showing</h1>
+
+<div class="search-box">
+    <input
+    type="text"
+    id="searchInput"
+    placeholder="Search Movie..."
+    onkeyup="searchMovie()">
+</div>
+
+<div class="movie-grid">
+
+    <div class="card movie-card">
+        <img src="images/avengers.jpg"
+        onclick="bookMovie('Avengers')">
+        <h3>Avengers</h3>
+        <p>Action | English</p>
+        <p>⭐ 8.8/10</p>
+        <button onclick="bookMovie('Avengers')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/interstellar.jpg"
+        onclick="bookMovie('Interstellar')">
+        <h3>Interstellar</h3>
+        <p>Sci-Fi | English</p>
+        <p>⭐ 9.1/10</p>
+        <button onclick="bookMovie('Interstellar')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/jawan.jpg"
+        onclick="bookMovie('Jawan')">
+        <h3>Jawan</h3>
+        <p>Action | Hindi</p>
+        <p>⭐ 8.2/10</p>
+        <button onclick="bookMovie('Jawan')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/kalki.jpg"
+        onclick="bookMovie('Kalki 2898 AD')">
+        <h3>Kalki 2898 AD</h3>
+        <p>Sci-Fi | Telugu</p>
+        <p>⭐ 8.7/10</p>
+        <button onclick="bookMovie('Kalki 2898 AD')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/pushpa2.jpg"
+        onclick="bookMovie('Pushpa 2')">
+        <h3>Pushpa 2</h3>
+        <p>Action | Telugu</p>
+        <p>⭐ 8.5/10</p>
+        <button onclick="bookMovie('Pushpa 2')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/salaar.jpg"
+        onclick="bookMovie('Salaar')">
+        <h3>Salaar</h3>
+        <p>Action | Telugu</p>
+        <p>⭐ 8.6/10</p>
+        <button onclick="bookMovie('Salaar')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/kgf2.jpg"
+        onclick="bookMovie('KGF 2')">
+        <h3>KGF 2</h3>
+        <p>Action | Kannada</p>
+        <p>⭐ 8.4/10</p>
+        <button onclick="bookMovie('KGF 2')">
+            Book Now
+        </button>
+    </div>
+
+    <div class="card movie-card">
+        <img src="images/leo.jpg"
+        onclick="bookMovie('Leo')">
+        <h3>Leo</h3>
+        <p>Action | Tamil</p>
+        <p>⭐ 8.1/10</p>
+        <button onclick="bookMovie('Leo')">
+            Book Now
+        </button>
+    </div>
+
+</div>
+
+<footer>
+    <h3>MovieHub</h3>
+    <p>B. KARTHIKEYA | CSE25016</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
